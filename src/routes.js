@@ -1,10 +1,12 @@
 const router = require("express").Router();
-const gameRoutes = require("./controllers/game/index");
+const roomRoutes = require("./controllers/room/index");
+const categoryRoutes = require("./controllers/category/index");
 // const userRoutes = require("./user");
 
 
 // router.use("/user", userRoutes)
-router.use("/game", gameRoutes);
+router.use("/room", roomRoutes);
+router.use("/category", categoryRoutes);
 
 module.exports = router
 
